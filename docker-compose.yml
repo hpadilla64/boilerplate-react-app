@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+     - .:/opt/docks/my-project/apps/app-name/
+    command: npm run build
+    ports:
+      - "5105:5105"

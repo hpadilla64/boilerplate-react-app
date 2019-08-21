@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier/react"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/prop-types": 0,
+    "complexity": ["error", 20]
+  },
+  "plugins": ["prettier", "jsx-a11y", "react"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest": true
+  }
+}
